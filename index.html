@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Photography</title>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="studio"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+      <section id="home">
+       <div class="logo">
+        <img src="images/LOKI.png"> 
+    </div>      
+     <div class="menu-icon" onclick="toggleMenu()"><span class="men">MENU</span>&emsp;☰</div>
+      <div class="menu-cont" id="nav-menu">
+        <span class="on-btn" onclick="toggleMenu()"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <ul>
+                <li><a href="#home.html"><span class="line">-</span>HOME</a></li>
+                <li><a href="#"><span class="line">-</span>ABOUT</a></li>
+                <li><a href="#"><span class="line">-</span>SERVICES</a></li>
+                <li><a href="#"><span class="line">-</span>GALLERY</a></li>
+                <li><a href="#"><span class="line">-</span>CONTACT</a></li>
+            </ul>
+            <img src="images/rah.png">
+    </div>
+    <div class="background-slider" id=bg-slider></div>
+        <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+        <button class="next-btn" onclick="nextImage()">&#10095;</button>
+        </section>
+        <section id="about">
+            <div class="about-head">
+                <h2 class="ab">&emsp;CAPTURING TIMELESS <span class="timeless">moments</span></h2>
+                <p class="about-text"&emsp;>We are professional photography agency providing photography services on all over India with our network of professional photographer. Whether you want to hire photographer for your pre-wedding shoot, wedding shoot or your kids photography we are just a call away. We also provide the cinematography services for our customers. We not only capture photos but we capture the real moment and store them, so that you can enjoy those memories forever.</p>
+                <div class="container">
+                    <div class="box">
+                    <a href="#">
+                      <img src="images/l1.jpg" class="box-image">
+                      <div class="overlay">
+                        <h3 class="box-heading">CAPTURING</h3>
+                        <p class="box-text">Beautiful Moments of Your Special Day.</p>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                      <img src="images/l1.jpg" class="box-image">
+                      <div class="overlay">
+                        <h3 class="box-heading">CAPTURING</h3>
+                        <p class="box-text">Exploring the Beauty of nature through the Lens.</p>
+                      </div>
+                    </a>
+                    </div>
+                    <div class="box">
+                      <a href="#">
+                      <img src="images/l1.jpg" class="box-image">
+                      <div class="overlay">
+                        <h3 class="box-heading">CAPTURING</h3>
+                        <p class="box-text">Creating Stunning Portraits that tell a story.</p>
+                      </div>
+                    </a>
+                  </div>
+               </div>
+               <h2 class="ab">&emsp;FILLING FRAMES <span class="timeless">with</span></h2>
+            </div>
+        </section>
+      <script src="script.js"></script>
+</body>
+</html>
