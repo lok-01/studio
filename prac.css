@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+.cont{
+    width:80%;
+    margin:0 auto;
+    padding:20px;
+}
+.sec{
+    display:flex;
+    box-shadow: 0 0 10px rgba(120, 120, 120, 0.451);
+}
+.sec img
+{
+    width:20%;
+    height:auto;
+}
+.conten{
+   padding:20px;
+}
+.conten h1{
+    margin-top:0;
+    color:brown;
+    font-size: 100px;
+}
+.conten p{
+    color:gray;
+    padding:10px;
+}
+.re{
+    color:white;
+    background-color:black;
+    border:none;
+    padding:10px 20px;
+    
+}

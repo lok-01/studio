@@ -1,0 +1,114 @@
+.container-t {
+    width: 60%;
+    max-width: 1200px; /* Limits the container width on larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically by default */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section:nth-child(odd) {
+    flex-direction: row;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.section img, .content {
+    width: 50%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* .section img {
+    height: auto; 
+    max-height: 300px;
+    object-fit: cover; 
+} */
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center aligns the content vertically */
+    position: relative;
+}
+
+.content h2 {
+    padding-bottom: 10px;
+    font-family: 'MyCustomFontFill';
+    font-size: 30px;
+    text-align: left;
+    margin-top: 0;
+    color: #333;
+}
+
+.content .we {
+    font-size: 25px;
+    color: #333;
+}
+
+.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: #666;
+}
+
+.cli {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: start; /* Aligns the button to the start */
+}
+
+.cli:hover {
+    background-color: #fffb00;
+    color: black;
+}
+
+/* Adding the arrow shapes for content boxes */
+
+/* Arrow pointing left for the 1st and 3rd content boxes */
+.section:nth-child(1) .content::after,
+.section:nth-child(3) .content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjust based on the desired position */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid white;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Arrow pointing right for the 2nd and 4th content boxes */
+.section:nth-child(2) .content::after,
+.section:nth-child(4) .content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Adjust based on the desired position */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid white;
+    transform: translateY(-50%);
+    z-index: 1;
+}
