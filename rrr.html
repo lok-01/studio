@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .image-section {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-section {
+            width: 50%;
+            padding: 20px;
+            background-color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="your-image-path.jpg" alt="Contact Us" style="max-width: 100%; border-radius: 10px;">
+        </div>
+        <div class="form-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formResponse" style="margin-top: 15px;"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                document.getElementById('formResponse').textContent = 'Thank you, ' + name + '! Your message has been sent.';
+                document.getElementById('contactForm').reset();
+            } else {
+                document.getElementById('formResponse').textContent = 'Please fill out all fields.';
+            }
+        });
+    </script>
+</body>
+</html>

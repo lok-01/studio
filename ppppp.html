@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Grid Layout</title>
+  <style>
+    .photo-grid {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(4, auto);
+      gap: 0px;
+      margin-left:50px;
+      margin-right:50px;
+    }
+
+    .photo-grid div {
+      background-color: #ccc; /* Replace with photos or content */
+      border: 1px solid black; /* Optional border */
+      height: 300px;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    .tall {
+      grid-row: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="photo-grid">
+    <div class="tall"></div>
+    <div class="wide"></div>
+    <div class="tall"></div>
+  </div>
+  <div class="photo-grid">
+    <div class="wide"></div>
+    <div class="tall"></div>
+    <div class="tall"></div>
+  </div>
+</body>
+</html>

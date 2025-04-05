@@ -1,0 +1,122 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html,body{
+    background-color: black;
+}
+.about-us-contain{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    padding-top: 100px;
+
+}
+.head1{
+    font-family: 'MyCustomFont1';
+    font-size: 90px;
+    color: white;
+    padding-left: 60px;
+
+}
+.ab1{
+    flex:1;
+    text-align:right;
+
+
+}
+.ab1 img{
+    width: 40%;
+    height:20%;
+    padding-right: 40px;
+}
+
+.about-us-container {
+    background-color: black;
+    color: white;
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    width:80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+    position: relative;
+    left:10%;
+    margin-bottom: 60px;
+}
+
+.about-us-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffd700; /* Gold color for the heading */
+    font-size: 80px;
+    
+}
+
+.about-us-container p {
+    margin: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    gap: 0px;
+    margin-left:150px;
+    margin-right:150px;
+  }
+  .photo-grid-1 {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    gap: 0px;
+    margin-left:150px;
+    margin-right:150px;
+    margin-bottom: 100px;
+  }
+
+  .photo-grid div {
+    background-color: #ccc; /* Replace with photos or content */
+    border: 1px solid black; /* Optional border */
+    height: 300px;
+  }
+  .photo-grid-1 div {
+    background-color: #ccc; /* Replace with photos or content */
+    border: 1px solid black; /* Optional border */
+    height: 300px;
+  }
+
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/WoodCarving-ZpJmK.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyCustomFont1';
+    src: url('fonts/VisiaPro-RegularOutline.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyCustomFontFill';
+    src: url('fonts/Altero-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyCustom';
+    src: url('fonts/VisiaPro-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'fit1';
+    src: url('fonts/Iconic-Regular-trial.ttf') format('truetype');
+}

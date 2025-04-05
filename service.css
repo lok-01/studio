@@ -1,0 +1,11 @@
+.ab2{
+    flex:1;
+    text-align:right;
+
+
+}
+.ab2 img{
+    width: 60%;
+    height:60%;
+    padding-right: 40px;
+}
