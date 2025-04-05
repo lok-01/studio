@@ -7,20 +7,13 @@
     html, body {
         background-color: black;
     }
-    .about-us-contain {
-        display: flex;
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center;
-        padding: 10px;
-        padding-top: 50px; 
-        margin:60px;
-    }
-    .head1 {
+    .head2 {
         font-family: 'MyCustomFont1';
-        font-size: 40px; /* Reduced font size for smaller screens */
+        font-size: 30px; /* Reduced font size for smaller screens */
         color: white;
         text-align: center; /* Center alignment for better readability */
         padding-left: 0; /* Removed extra padding */
+        margin-bottom:20px;
     }
     .ab1 {
         text-align: center; /* Centered images on mobile */
@@ -28,7 +21,8 @@
     .ab1 img {
         width: 80%; /* Adjusted for better fit on mobile */
         height: auto; /* Maintain image proportions */
-        margin:10px;
+        margin:20px;
+        
     }
     .about-us-container {
         margin-top: 20px; /* Reduced top margin for mobile */
@@ -102,6 +96,46 @@
         margin-top: 20px; /* Space above footer-bottom content */
         font-size: 14px; /* Adjust size for smaller screens */
     }
+}
+@media only screen and (max-width: 768px) {
+.about-us-contain {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    padding: 10px;
+    padding-top: 50px; 
+    margin: 60px; /* Adds outer margin for spacing */
+}
+
+.ab4 {
+    width: 100%; /* Ensures the image container takes full width */
+    text-align: center; /* Centers the image */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.ab4 img {
+    width: 90%; /* Image occupies 90% of its container for better scaling */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 600px; /* Prevents the image from being too large */
+    padding: 0; /* Removes excess padding */
+    display: block; /* Ensures proper rendering without inline space issues */
+    margin: 0 auto; /* Centers the image in the container */
+}
+.form-section {
+    width: 90%; /* Expand the form width for mobile */
+    padding: 20px; /* Adjust padding for compactness */
+    background-color: #222; /* Retain form background color */
+    margin: 0 auto 50px auto; /* Center the form and add spacing below */
+    border-radius: 5px; /* Add rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.form-title {
+    font-size: 22px; /* Adjust title size for smaller screens */
+    color: white;
+    margin-bottom: 15px; /* Add spacing below the title */
+    text-align: center;
+}
 }
 @font-face {
     font-family: 'MyCustomFont';

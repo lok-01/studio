@@ -11,6 +11,7 @@ html,body{
     align-items: center;
     padding:20px;
     padding-top: 100px;
+    margin-left:100px;
 
 }
 .head1{
@@ -29,7 +30,7 @@ html,body{
 .ab1 img{
     width: 40%;
     height:20%;
-    padding-right: 40px;
+    margin-left: 100px;;
 }
 
 .about-us-container {
@@ -53,7 +54,6 @@ html,body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffd700; /* Gold color for the heading */
     font-size: 80px;
-    
 }
 
 .about-us-container p {
@@ -67,38 +67,46 @@ html,body{
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(4, auto);
     gap: 0px;
-    margin-left:150px;
-    margin-right:150px;
-  }
-  .photo-grid-1 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.photo-grid-1 {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(4, auto);
     gap: 0px;
-    margin-left:150px;
-    margin-right:150px;
-    margin-bottom: 100px;
-  }
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 200px;
+}
 
-  .photo-grid div {
-    background-color: #ccc; /* Replace with photos or content */
-    border: 1px solid black; /* Optional border */
+.photo-grid div {
+    background-color: #ccc;
+    border: 1px solid black;
     height: 300px;
-  }
-  .photo-grid-1 div {
-    background-color: #ccc; /* Replace with photos or content */
-    border: 1px solid black; /* Optional border */
-    height: 300px;
-  }
+}
 
-  .wide {
+.photo-grid-1 div {
+    background-color: #ccc;
+    border: 1px solid black;
+    height: 300px;
+}
+
+.wide {
     grid-column: span 2;
-  }
+}
 
-  .tall {
+.tall {
     grid-row: span 2;
-  }
+}
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images are cropped nicely */
+    display: block; /* Removes whitespace below images */
+}
 
 @font-face {
     font-family: 'MyCustomFont';

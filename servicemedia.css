@@ -17,10 +17,11 @@
     }
     .head1 {
         font-family: 'MyCustomFont1';
-        font-size: 40px; /* Reduced font size for smaller screens */
+        font-size: 35px; /* Reduced font size for smaller screens */
         color: white;
         text-align: center; /* Center alignment for better readability */
         padding-left: 0; /* Removed extra padding */
+        margin-bottom:20px;
     }
     .ab1 {
         text-align: center; /* Centered images on mobile */
@@ -103,6 +104,7 @@
         font-size: 14px; /* Adjust size for smaller screens */
     }
 }
+
 @font-face {
     font-family: 'MyCustomFont';
     src: url('fonts/WoodCarving-ZpJmK.ttf') format('truetype');

@@ -17,7 +17,7 @@
     }
     .head1 {
         font-family: 'MyCustomFont1';
-        font-size: 40px; /* Reduced font size for smaller screens */
+        font-size: 35px; /* Reduced font size for smaller screens */
         color: white;
         text-align: center; /* Center alignment for better readability */
         padding-left: 0; /* Removed extra padding */
